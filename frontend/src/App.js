@@ -3,6 +3,8 @@ import Questions from './pages/questions';
 import UserProfile from'./pages/UserProfile';
 import Login from './pages/login';
 import Signup from './pages/signup';
+import Match from './pages/match';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import NavBar from './components/navBar';
@@ -20,6 +22,7 @@ function App() {
         <Route path="signup" element={<Signup />} />
         <Route path="userprofile" element={<UserProfile />}/>
         <Route path="viewusers" element={<ViewUsers />}/>
+        <Route path="match" element={<Match />}/>
       </Routes>
     </div>
   );
